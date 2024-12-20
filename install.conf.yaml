@@ -1,6 +1,11 @@
 - defaults:
     link:
       relink: true
+- link:
+    ~/AppData/Roaming/Code/User/keybindings.json:
+      if: 'REG QUERY "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion"'
+      path: config/vs-keybindings.json
+      force: true
 - windows:
     fonts:
-      path: "fonts/"
+      path: 'fonts/'

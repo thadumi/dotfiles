@@ -1,0 +1,16 @@
+// Place your key bindings in this file to override the defaults
+// ref: https://code.visualstudio.com/docs/getstarted/keybindings
+[
+    // ----------------------------------------------------------
+    // Toggle between terminal and editor focus
+    {
+        "key":     "ctrl+shift+1",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key":     "ctrl+1",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when":    "terminalFocus"
+    },
+    // ----------------------------------------------------------  
+]
