@@ -6,6 +6,12 @@
       if: 'REG QUERY "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion"'
       path: config/vs-keybindings.json
       force: true
+    ~/.zshrc:
+      if: 'uname -r'
+      path: linfig/.zshrc
+    ~/.tmux.conf:
+      if: 'uname -r'
+      path: linfig/.tmux.conf
 - windows:
     fonts:
       path: 'fonts/'
