@@ -70,7 +70,13 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  git zsh-autosuggestions
+  zsh-autocomplete
+  zsh-interactive-cd
+  docker
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,3 +112,7 @@ source $ZSH/oh-my-zsh.sh
 if [ -d "/usr/local/go/bin" ]; then
   export PATH=$PATH:/usr/local/go/bin
 fi
+
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
