@@ -73,7 +73,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   zsh-autosuggestions
-  zsh-autocomplete
+  # zsh-autocomplete
   zsh-interactive-cd
   docker
 )
