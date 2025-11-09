@@ -21,7 +21,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 
 #-------------------- NeoVim plugins -----------------------
-echo '----------------------------------------------------'
-echo 'Installing neovim plugins...'
+# echo '----------------------------------------------------'
+# echo 'Installing neovim plugins...'
 
-git clone https://github.com/neovim/nvim-lspconfig ~/.config/nvim/pack/nvim/start/nvim-lspconfig
+# curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+#    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# git clone https://github.com/neovim/nvim-lspconfig ~/.config/nvim/pack/nvim/start/nvim-lspconfig
